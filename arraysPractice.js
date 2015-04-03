@@ -53,10 +53,18 @@ reversedLooper();
 var nums = [1,2,3,6,22,98,45,23,22,12];
 //Write a function named evenFinder that is given nums as it's only argument and removes all values that aren't even from the given array.
 
-  //Code Here
+var evenFinder = function(){
+  for (var i = 0; i < nums.length; i++) {
+    if (nums[i] % 2 !== 0 ) {
+       nums.splice(i, 1);
+       i--;
+    };
+  };
 
+};
+evenFinder();
+nums;
 
-//Next problem
 
 
 var nums = [1,2,34,54,55,34,32,11,19,17,54,66,13];
